@@ -1,0 +1,82 @@
+#game
+{
+	background-color: #cfecff ;
+	border: 5px ridge silver;
+	width: 1280px;
+	height: 630px;
+	overflow: hidden;
+}
+body
+{
+	background-color: black;
+}
+
+#block
+{
+	width: 100px;
+	height: 630px;
+	background-image: linear-gradient( to right, #18a50f , #4de80f,  #a2ff00 , #4de80f ,  #18a50f );
+	
+}
+
+#hole
+{
+	width: 100px;
+	height: 250px;
+	background-color:  #cfecff ;
+	
+	top: -500px;
+}
+
+
+
+#hole , #block 
+{
+	animation-name: move;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 5s;
+	position: relative;
+}
+
+
+
+@keyframes move
+{
+	from
+	{
+		left : 1270px;
+	}
+	to
+	{
+		left: -100px;
+	}
+}
+
+
+#charac
+{
+	width: 100px;
+	height: 100px;
+	
+	position: absolute;
+	top: 150px;
+	left: 100px;
+	background-image: url('https://i.pinimg.com/originals/02/ce/79/02ce7945c01a4d62f78e480ca9c51f00.gif');
+	background-size: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
